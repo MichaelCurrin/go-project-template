@@ -11,7 +11,7 @@ Package used:
 
 - https://pkg.go.dev/rsc.io/quote
 
-### Steps
+### Hello world steps
 
 Create `hello.go` with an import of `quote`.
 
@@ -78,6 +78,66 @@ For comparison, see the [go.mod](https://github.com/rsc/quote/blob/v1.5.2/go.mod
 module "rsc.io/quote"
 
 require "rsc.io/sampler" v1.3.0
+```
+
+
+## Create and call a package
+
+### Create a module
+
+```sh
+$ mkdir greetings
+$ cd greetings
+```
+
+```sh
+$ go mod init example.com/greetings
+```
+
+Create a script - [greetings.go](/greetings/go.mod).
+
+### Call it
+
+From the project root.
+
+```sh
+$ mkdir hello
+$ cd hello
+```
+
+Create a file [hello](/hello/hello.go).
+
+Create a new module.
+
+```sh
+$ go mod init hello
+```
+
+For production use, you'd publish `greetings` to a server.
+
+For now, we adapt the caller's module so it can find the greetings code on your local file system.
+
+```go
+replace example.com/greetings => ../greetings
+```
+
+Locate the module and add it to a `go.mod` file.
+
+```sh
+$ go build
+go: found example.com/greetings in example.com/greetings v0.0.0-00010101000000-000000000000
+```
+
+If you referenced a published module you would use this:
+
+```go
+require example.com/greetings v1.1.0
+```
+
+Run executable created by the build command.
+
+```sh
+$ ./hello
 ```
 
 
