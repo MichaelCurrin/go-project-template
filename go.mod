@@ -1,4 +1,4 @@
-module cmd/myapp
+module github.com/MichaelCurrin/go-tutorial
 
 go 1.15
 
