@@ -7,6 +7,13 @@
 [![Go - 1](https://img.shields.io/badge/Go-1-blue?logo=go&logoColor=white)](https://golang.org)
 
 
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/go-project-template/generate)
+
+</div>
+
+
 ## Template notes
 
 <!-- Delete this notes section in your copy of the template -->
