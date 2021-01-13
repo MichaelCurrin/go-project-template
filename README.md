@@ -1,6 +1,8 @@
 # Go Project Template
 > Scaffolding for a Go app
 
+<!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
+
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/go-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/go-project-template/releases/)
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
@@ -29,15 +31,16 @@ How to install and run this project.
 
 <!-- Delete this notes section in your copy of the template -->
 
+Learn Go:
+
+- [Dev Resources](https://michaelcurrin.github.io/dev-resources/resources/go/)
+- [Dev Cheatsheets](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/go/)
+
+
 Other templates:
 
 - [![golang-standards - project-layout](https://img.shields.io/static/v1?label=golang-standards&message=project-layout&color=blue&logo=github)](https://github.com/golang-standards/project-layout) [![stars - project-layout](https://img.shields.io/github/stars/golang-standards/project-layout?style=social)](https://github.com/golang-standards/project-layout)
 - [![golang-templates - seed](https://img.shields.io/static/v1?label=golang-templates&message=seed&color=blue&logo=github)](https://github.com/golang-templates/seed) [![stars - seed](https://img.shields.io/github/stars/golang-templates/seed?style=social)](https://github.com/golang-templates/seed)
-
-Links to resources for learning go:
-
-- [Go](https://michaelcurrin.github.io/dev-resources/resources/go/) in Dev Resources
-
 
 
 ## License
