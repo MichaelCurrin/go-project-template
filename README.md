@@ -14,6 +14,17 @@
 </div>
 
 
+## Documentation
+
+<div align="center">
+
+How to install and run this project.
+
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
+
+</div>
+
+
 ## Template notes
 
 <!-- Delete this notes section in your copy of the template -->
@@ -27,16 +38,6 @@ Links to resources for learning go:
 
 - [Go](https://michaelcurrin.github.io/dev-resources/resources/go/) in Dev Resources
 
-
-## Documentation
-
-<div align="center">
-
-How to install and run this project.
-
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
-
-</div>
 
 
 ## License
