@@ -3,7 +3,7 @@
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
-![Go CI](https://github.com/MichaelCurrin/go-project-template/workflows/Go%20CI/badge.svg)
+[![Go CI](https://github.com/MichaelCurrin/go-project-template/workflows/Go%20CI/badge.svg)](https://github.com/MichaelCurrin/go-project-template/actions?query=workflow%3A%22Go+CI%22)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/go-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/go-project-template/releases/)
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
