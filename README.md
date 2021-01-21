@@ -3,10 +3,12 @@
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
+![Go CI](https://github.com/MichaelCurrin/go-project-template/workflows/Go%20CI/badge.svg)
+
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/go-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/go-project-template/releases/)
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Go - 1](https://img.shields.io/badge/Go-1-blue?logo=go&logoColor=white)](https://golang.org)
+[![Made with Go](https://img.shields.io/badge/Go-1-blue?logo=go&logoColor=white)](https://golang.org)
 
 
 <div align="center">
