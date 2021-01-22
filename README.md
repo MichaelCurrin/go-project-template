@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/go-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/go-project-template/generate)
 
 </div>
 
@@ -23,7 +23,7 @@
 
 How to install and run this project.
 
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
+[![View - Documentation](https://img.shields.io/badge/View-Documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
 
