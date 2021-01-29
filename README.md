@@ -45,9 +45,10 @@ Other Go templates:
 
 My own template projects:
 
-- [deno-project-template](https://github.com/MichaelCurrin/deno-project-template) - Deno runs JS and TS, but it's CLI and flow is similar to Go, so it's good to compare with.
-- [node-project-template](https://github.com/MichaelCurrin/node-project-template)
-- [py-project-template](https://github.com/MichaelCurrin/py-project-template)
+- [![MichaelCurrin - deno-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=deno-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/deno-project-template) 
+    - Deno runs JS and TS, but it's CLI and flow is similar to Go, so it's good to compare with.
+- [![MichaelCurrin - node-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=node-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/node-project-template)
+- [![MichaelCurrin - py-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=py-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/py-project-template)
 
 
 ## License
