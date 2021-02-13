@@ -1,4 +1,4 @@
-help:
+h help:
 	@grep '^[a-z]' Makefile
 
 
