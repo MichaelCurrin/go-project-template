@@ -16,4 +16,6 @@ Install Go on your system - see [Install Go](https://michaelcurrin.github.io/dev
 
 ## Install project packages
 
-TBC
+```sh
+$ make install
+```
