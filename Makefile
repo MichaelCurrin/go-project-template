@@ -11,5 +11,6 @@ install:
 run:
 	go run cmd/myapp/main.go
 
+.PHONY: build
 build:
-	go build -o myapp cmd/myapp/main.go
+	go build -o build/myapp cmd/myapp/main.go
