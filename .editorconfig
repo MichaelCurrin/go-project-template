@@ -4,5 +4,5 @@ root = true
 indent_style = space
 indent_size = 4
 
-[*.go]
+[{*.go,Makefile}]
 indent_style = tab
