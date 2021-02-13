@@ -1,5 +1,11 @@
+default: install
+
 h help:
 	@grep '^[a-z]' Makefile
+
+
+install:
+	go get ./...
 
 
 run:
