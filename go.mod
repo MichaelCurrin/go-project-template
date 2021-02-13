@@ -1,4 +1,4 @@
-module github.com/MichaelCurrin/go-tutorial
+module github.com/MichaelCurrin/go-project-template
 
 go 1.15
 
