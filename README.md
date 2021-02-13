@@ -3,16 +3,16 @@
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
-[![Go CI](https://github.com/MichaelCurrin/go-project-template/workflows/Go%20CI/badge.svg)](https://github.com/MichaelCurrin/go-project-template/actions?query=workflow%3A%22Go+CI%22)
+[![Go CI](https://github.com/MichaelCurrin/go-project-template/workflows/Go%20CI/badge.svg)](https://github.com/MichaelCurrin/go-project-template/actions?query=workflow:"Go+CI")
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/go-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/go-project-template/releases/)
-[![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with Go](https://img.shields.io/github/go-mod/go-version/MichaelCurrin/go-project-template?logo=go&logoColor=white)](https://golang.org)
 
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Use_template-Generate-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/go-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Generate-Use_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/go-project-template/generate)
 
 </div>
 
