@@ -3,9 +3,11 @@ COMPILED := $(OUT_DIR)/myapp
 
 .PHONY: $(OUT_DIR)
 
+
 default: install
 
 all: install fmt test build
+
 
 h help:
 	@grep '^[a-z]' Makefile
