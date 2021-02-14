@@ -114,4 +114,17 @@ Sample `cmd` script in a repo recommended by the layouts project.
     }
     ```
 
-See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go) which has a `Run` function.
+See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go)
+
+That is setup as `package app`.
+
+It has a `Run` function.
+
+So that is how `app.Run()` is called.
+
+Not to be confused with setting up a CLI as:
+
+```go
+app := &cli.App{}
+app.Run(os.Args)
+```
