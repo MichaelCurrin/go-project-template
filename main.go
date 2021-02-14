@@ -13,7 +13,7 @@ import (
 
 const (
 	// VERSION is the release number.
-	VERSION = "v0.2.0"
+	VERSION = "v0.3.0"
 )
 
 func main() {
