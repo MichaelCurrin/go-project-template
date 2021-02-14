@@ -11,4 +11,4 @@
 
 This template project uses these packages, as covered in [go.mod](/go.mod).
 
-- [https://github.com/urfave/cli/v2](urfave/cli/v2)
+- [github.com/urfave/cli/v2](https://github.com/urfave/cli/v2)
