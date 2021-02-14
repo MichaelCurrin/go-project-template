@@ -7,6 +7,9 @@ h help:
 install:
 	go get ./...
 
+upgrade:
+	go get -u ./...
+
 
 run:
 	go run cmd/myapp/main.go
