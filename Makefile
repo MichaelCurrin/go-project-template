@@ -18,8 +18,8 @@ fmt:
 
 
 test:
-	echo "TODO Add tests"
-	#go test
+	@echo "TODO Add tests"
+	go test -v ./...
 
 run:
 	go run main.go
@@ -31,7 +31,7 @@ usage:
 
 .PHONY: build
 build:
-	go build -o build/myapp main.go
+	go build -v -o build/myapp main.go
 
 
 global:
