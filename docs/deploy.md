@@ -3,24 +3,46 @@
 
 ## Build
 
-Compile to app as a single binary.
+Compile the app as a single binary in the unversioned `build` directory.
 
 ```sh
 $ make build
 ```
 
-This also installs the app to your `GOBIN`, if you want to run that locally.
+Test the build:
 
-The output file can be found here:
+```sh
+$ build/myapp -h
+```
 
-- `build/myapp`
+You can share that binary with others to download and run.
 
-This can be downloaded by others using the same OS architecture as what you compiled with.
+For example, add the binary to a GitHub release as an asset and add Download button in your docs. That will make it easy for someone to download from GitHub. TH
 
-You can add the binary to a GitHub release as an asset to make it easy for someone to download.
+Note that the binary is specific to an OS architecture.
 
 
-## CI
+## Install globally
+
+Install to your `GOBIN`.
+
+```sh
+$ make global
+```
+
+Test it:
+
+```sh
+$ go-project-template -h
+```
+
+Make sure your `PATH` is setup in `.bashrc` or similar to include the `GOBIN` directory, so your command can be run from anywhere:
+
+```sh
+export PATH="$PATH:$GOPATH/bin"
+```
+
+## CI flow
 
 This project used GitHub Actions for CI.
 
