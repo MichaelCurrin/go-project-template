@@ -10,34 +10,6 @@
 [![Made with Go](https://img.shields.io/github/go-mod/go-version/MichaelCurrin/go-project-template?logo=go&logoColor=white)](https://golang.org)
 
 
-## Sample usage
-
-Install:
-
-```sh
-$ go install github.com/MichaelCurrin/go-project-template/cmd/myapp
-```
-
-Run:
-
-```sh
-$ myapp -h
-```
-```
-NAME:
-   myapp - A new cli application
-
-USAGE:
-   myapp [global options] command [command options] [arguments...]
-
-COMMANDS:
-   help, h  Shows a list of commands or help for one command
-
-GLOBAL OPTIONS:
-   --help, -h  show help (default: false)
-```
-
-
 ## Start a new project
 
 <div align="center">
