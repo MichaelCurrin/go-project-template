@@ -1,5 +1,5 @@
 # Go Project Template
-> Scaffolding for a Go app 
+> Starter template for a new Go project - includes docs, Makefile and GH Actions CI
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
