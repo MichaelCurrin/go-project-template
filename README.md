@@ -14,6 +14,10 @@
 
 ```sh
 $ myapp
+Hello, World!
+
+$ myapp --name Gopher
+Hello, Gopher!
 ```
 
 
@@ -29,7 +33,7 @@ See also [Template notes](/docs/template-notes/) in the docs.
 
 
 ## Documentation
-> How to install and run this project locally and deploy it
+> How to install and run this project locally and release it
 
 <div align="center">
 
