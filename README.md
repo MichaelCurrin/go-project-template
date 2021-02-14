@@ -1,5 +1,5 @@
 # Go Project Template
-> Scaffolding for a Go app
+> Scaffolding for a Go app 
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
