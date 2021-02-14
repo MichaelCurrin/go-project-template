@@ -1,3 +1,8 @@
+OUT_DIR = build
+COMPILED := $(OUT_DIR)/myapp
+
+.PHONY: $(OUT_DIR)
+
 default: install
 
 all: install fmt test build
@@ -16,7 +21,6 @@ upgrade:
 fmt:
 	go fmt ./...
 
-
 test:
 	@echo "TODO Add tests"
 	go test -v ./...
@@ -29,9 +33,8 @@ usage:
 	go run main.go -h
 
 
-.PHONY: build
 build:
-	go build -v -o build/myapp main.go
+	go build -v -o $(COMPILED) main.go
 
 
 global:
