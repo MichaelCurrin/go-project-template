@@ -17,8 +17,8 @@ func main() {
 		Version:     "v0.2.0",
 		Description: "A Hello World greeting app to get you started with a new Go project",
 
-		// Commands:    []*cli.Command{},
-		// Flags:       []cli.Flag{},
+		Commands: []*cli.Command{},
+		Flags:    []cli.Flag{},
 
 		Action: func(c *cli.Context) error {
 			name := "World"
