@@ -31,15 +31,15 @@ Hello, Gopher!
 ```
 
 
-## Start a new project
-
-See also [Template notes](/docs/template-notes/) in the docs.
+## Start a new Go project
 
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/go-project-template/generate)
 
 </div>
+
+For help using this project, see [Template notes](/docs/template-notes/) in the docs.
 
 
 ## Documentation
