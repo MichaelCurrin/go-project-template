@@ -5,15 +5,30 @@ h help:
 
 
 install:
-	go get ./...
+	go get # ./...
 
 upgrade:
-	go get -u ./...
+	go get -u # ./...
 
+
+fmt:
+	go fmt # ./...
+
+
+test:
+	go test
 
 run:
-	go run cmd/myapp/main.go
+	go run main.go --name Gopher
+
+usage:
+	go run main.go -h
+
 
 .PHONY: build
 build:
-	go build -o build/myapp cmd/myapp/main.go
+	go build -o build/myapp main.go
+
+
+global:
+	go install
