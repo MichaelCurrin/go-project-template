@@ -7,9 +7,13 @@ import (
 	"time"
 
 	"github.com/urfave/cli/v2"
+
+	greetings "github.com/MichaelCurrin/go-project-template/internal"
 )
 
 func main() {
+	var name string
+
 	app := &cli.App{
 		Name:        "My App",
 		HelpName:    "myapp",
@@ -18,17 +22,27 @@ func main() {
 		Description: "A Hello World greeting app to get you started with a new Go project",
 
 		Commands: []*cli.Command{},
-		Flags:    []cli.Flag{},
+		Flags: []cli.Flag{
+			&cli.StringFlag{
+				Name:        "name",
+				Value:       "World",
+				Usage:       "Name of a person to greet",
+				Destination: &name,
+			},
+		},
 
 		Action: func(c *cli.Context) error {
-			name := "World"
-			if c.NArg() > 0 {
-				name = c.Args().Get(0)
+			greeting, err := greetings.Hello(name)
+
+			if err != nil {
+				log.Fatal(err)
 			}
-			fmt.Printf("Hello, %v!\n", name)
+
+			fmt.Println(greeting)
 
 			return nil
 		},
+
 		Compiled: time.Time{},
 		Authors: []*cli.Author{
 			{
