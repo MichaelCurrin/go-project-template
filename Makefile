@@ -1,24 +1,28 @@
 default: install
 
+all: install fmt test build
+
 h help:
 	@grep '^[a-z]' Makefile
 
 
 install:
-	go get # ./...
+	go get ./...
 
 upgrade:
-	go get -u # ./...
+	go get -u ./...
 
 
 fmt:
-	go fmt # ./...
+	go fmt ./...
 
 
 test:
-	go test
+	echo "TODO Add tests"
+	#go test
 
 run:
+	go run main.go
 	go run main.go --name Gopher
 
 usage:
