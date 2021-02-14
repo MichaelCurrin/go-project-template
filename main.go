@@ -11,6 +11,11 @@ import (
 	greetings "github.com/MichaelCurrin/go-project-template/internal"
 )
 
+const (
+	// VERSION is the release number.
+	VERSION = "v0.2.0"
+)
+
 func main() {
 	var name string
 
@@ -18,7 +23,7 @@ func main() {
 		Name:        "My App",
 		HelpName:    "myapp",
 		Usage:       "Display a friendly greeting",
-		Version:     "v0.2.0",
+		Version:     VERSION,
 		Description: "A Hello World greeting app to get you started with a new Go project",
 
 		Commands: []*cli.Command{},
