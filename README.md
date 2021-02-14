@@ -10,15 +10,22 @@
 [![Made with Go](https://img.shields.io/github/go-mod/go-version/MichaelCurrin/go-project-template?logo=go&logoColor=white)](https://golang.org)
 
 
+## Sample usage
+
+```sh
+$ myapp
+```
+
+
 ## Start a new project
+
+See also [Template notes](/docs/template-notes/) in the docs.
 
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/go-project-template/generate)
 
 </div>
-
-See also [Template notes](/docs/template-notes/) in the docs.
 
 
 ## Documentation
