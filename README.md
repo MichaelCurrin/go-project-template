@@ -12,11 +12,21 @@
 
 ## Sample usage
 
+Default.
+
 ```sh
 $ myapp
+```
+```
 Hello, World!
+```
 
+Custom.
+
+```sh
 $ myapp --name Gopher
+```
+```
 Hello, Gopher!
 ```
 
