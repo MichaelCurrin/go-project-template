@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Setup Go
+      - name: Setup Go ⚙️
         uses: actions/setup-go@v2
         with:
           go-version: 1.15
 
-      - name: Test
+      - name: Test 🚨
         run: make test
 
-      - name: Build
+      - name: Build 🏗️
         run: make build
