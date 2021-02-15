@@ -9,13 +9,15 @@
     1. **Increment** the version number in [main.go](/main.go).
     2. **Commit** as "Bump version number".
     3. **Tag** the commit.
-    4. **Build** a binary file (this will include the version number in its help output).
-    5. **Rename** the file it based on your OS architecture - e.g. `myapp-macos`. See [Build](#build) below.
-    6. **Test** the file.
-    7. **Push** the commits. and the tag.
+    4. **Build** a binary file (this will include the version number in its help output). See [Build](#build) section below.
+    5. **Zip** the file
+    6. **Rename** the zip file. e.g. for macOS: `go_project_template_0.4.0_darwin.tar.gz`.
+    7. **Test** the file.
+    8. **Push** the commits. and the tag.
 4. Create a **Release** on GitHub.
 5.  **Upload** the binary file on asset.
 
+The [Go Releaser](https://goreleaser.com/ci/actions/) action can help with automating this flow.
 
 ## Build
 
