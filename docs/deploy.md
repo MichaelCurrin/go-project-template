@@ -1,6 +1,22 @@
 # Deploy
 
 
+## Release steps
+
+1. **Push** any unpushed changes.
+2. Check that the GH Actions **workflow** was successful. See [CI flow](#ci-flow) below.
+3. Locally:
+    1. **Increment** the version number in [main.go](/main.go).
+    2. **Commit** as "Bump version number".
+    3. **Tag** the commit.
+    4. **Build** a binary file (this will include the version number in its help output).
+    5. **Rename** the file it based on your OS architecture - e.g. `myapp-macos`. See [Build](#build) below.
+    6. **Test** the file.
+    7. **Push** the commits. and the tag.
+4. Create a **Release** on GitHub.
+5.  **Upload** the binary file on asset.
+
+
 ## Build
 
 Compile the app as a single binary in the unversioned `build` directory.
@@ -24,7 +40,7 @@ Note that the binary is specific to an OS architecture.
 
 ## Install globally
 
-Install to your `GOBIN`.
+Compile the app and install to your `GOBIN`. This will not add to the project `build` directory.
 
 ```sh
 $ make global
@@ -33,6 +49,7 @@ $ make global
 Test it:
 
 ```sh
+$ cd ~
 $ go-project-template -h
 ```
 
@@ -41,6 +58,7 @@ Make sure your `PATH` is setup in `~/.bashrc` or similar to include the `GOBIN` 
 ```sh
 export PATH="$PATH:$GOPATH/bin"
 ```
+
 
 ## CI flow
 
