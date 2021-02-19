@@ -8,11 +8,12 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with Go](https://img.shields.io/github/go-mod/go-version/MichaelCurrin/go-project-template?logo=go&logoColor=white)](https://golang.org)
+[![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/go-project-template/badge.svg?targetFile=go.mod)](https://snyk.io/test/github/MichaelCurrin/go-project-template?targetFile=go.mod)
 
 
 ## Sample usage
 
-Default.
+Default behavior:
 
 ```sh
 $ myapp
@@ -21,7 +22,7 @@ $ myapp
 Hello, World!
 ```
 
-Custom.
+With options:
 
 ```sh
 $ myapp --name Gopher
