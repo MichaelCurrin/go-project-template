@@ -27,6 +27,7 @@ test:
 	@echo "TODO Add tests"
 	go test -v ./...
 
+
 run:
 	go run main.go
 	go run main.go --name Gopher
@@ -37,7 +38,6 @@ usage:
 
 build:
 	go build -v -o $(COMPILED) main.go
-
 
 global:
 	go install
