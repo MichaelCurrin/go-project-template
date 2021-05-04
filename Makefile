@@ -1,5 +1,6 @@
 OUT_DIR = build
-COMPILED := $(OUT_DIR)/myapp
+OUT_BIN = myapp
+COMPILED := $(OUT_DIR)/$(OUT_BIN)
 
 .PHONY: $(OUT_DIR)
 
@@ -24,7 +25,7 @@ fmt:
 	go fmt ./...
 
 test:
-	@echo "TODO Add tests"
+	@echo "TODO: Add tests"
 	go test -v ./...
 
 
