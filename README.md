@@ -8,12 +8,13 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with Go](https://img.shields.io/github/go-mod/go-version/MichaelCurrin/go-project-template?logo=go&logoColor=white)](https://golang.org)
+[![dependency - urfave/cli/v2](https://img.shields.io/badge/dependency-urfave%2Fcli%2Fv2-2ea44f)](https://github.com/urfave/cli)
 [![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/go-project-template/badge.svg?targetFile=go.mod)](https://snyk.io/test/github/MichaelCurrin/go-project-template?targetFile=go.mod)
 
 
 ## Sample usage
 
-Default behavior:
+### Default behavior
 
 ```sh
 $ myapp
@@ -22,7 +23,7 @@ $ myapp
 Hello, World!
 ```
 
-With options:
+### With options
 
 ```sh
 $ myapp --name Gopher
