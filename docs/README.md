@@ -14,4 +14,7 @@
 - [Installation](installation.md)
 - [Usage](usage.md)
 - [Deploy](deploy.md)
+
+The above applies to projects generated with this template. For info on this template itself, see:
+
 - [Template notes](template-notes/)
