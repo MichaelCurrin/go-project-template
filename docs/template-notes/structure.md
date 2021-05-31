@@ -10,13 +10,13 @@ I don't know if you can have multiple modules as files at the top-level because 
 
 ### Main
 
-[main.go](/main.go)
+- [main.go](/main.go)
 
 Entry-point script and argument parsing.
 
 ### Greetings
 
-[internal/greetings.go](/internal/greetings.go)
+- [internal/greetings.go](/internal/greetings.go)
 
 This is imported in `main.go`.
 
@@ -26,7 +26,7 @@ The filename can be anything it seems.
 
 ### Go module
 
-`go.mod`
+- `go.mod`
 
 Go does not have relative imports, by design.
 
