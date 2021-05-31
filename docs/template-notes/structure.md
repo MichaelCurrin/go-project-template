@@ -1,8 +1,8 @@
 # Structure
+> An explanation of this project's file and directory structure
 
-This doc explains the structure of this project.
+For smaller projects, you may find it much simpler and easier to have Go modules in the top-level of your repo, as covered in the basic section.
 
-For smaller projects, you may find it, you may find it much simpler and easier to have Go modules in the top-level of your repo, as covered in the basic section.
 
 ## Basic structure
 
@@ -98,8 +98,7 @@ See the official [Project Layout](https://github.com/golang-standards/project-la
 | [cmd](/cmd/)          | Entry-point for the CLI. Keep this light on code. Inside `cmd`, include a directory named as the intended name of your executable and add `main.go` file there. This approach is not used for this project, to keep things easier to learn and read as a Go beginner. |
 | [internal](/internal) | Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself.                                                                       |
 | [pkg](/pkg/)          | Library code that's ok to use by external applications                                                                                                                                                                                                                |
-
-Sample `cmd` script in a repo recommended by the layouts project.
+Sample `cmd` script in a repo, as recommended by the layouts project.
 
 - [cmd/docker-slim-sensor/main.go](https://github.com/docker-slim/docker-slim/blob/master/cmd/docker-slim-sensor/main.go)
     ```go
@@ -116,13 +115,9 @@ Sample `cmd` script in a repo recommended by the layouts project.
 
 See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go)
 
-That is setup as `package app`.
+That is set up as `package app`. It has a `Run` function. So that is how `app.Run()` is called.
 
-It has a `Run` function.
-
-So that is how `app.Run()` is called.
-
-Not to be confused with setting up a CLI as:
+Not to be confused with setting up a CLI app as:
 
 ```go
 app := &cli.App{}
