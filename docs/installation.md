@@ -28,14 +28,27 @@ Install Go on your system - see [Install Go](https://michaelcurrin.github.io/dev
 
 ## Install project packages
 
-This step is _optional_ as packages will be installed on an initial run.
+This step is actually _optional_ as packages will be installed on an initial run.
 
 ```sh
 $ make install
 ```
 
-If you need to upgrade all packages to the latest:
+
+## Maintain packages
+
+### Upgrade
+
+Upgrade all packages to the latest:
 
 ```sh
 $ make upgrade
+```
+
+### Tidy
+
+Install missing modules and removed unused modules from the lockfile.
+
+```sh
+$ make tidy
 ```
