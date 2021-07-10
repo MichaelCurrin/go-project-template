@@ -2,26 +2,27 @@ name: Go CI
 
 on:
   push:
-    branches: main
+    branches: [main]
     paths-ignore:
       - "docs/**"
+
   pull_request:
-    branches: main
+    branches: [main]
     paths-ignore:
       - "docs/**"
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Setup Go ⚙️
+      - name: Set up Go ⚙️
         uses: actions/setup-go@v2
         with:
-          go-version: 1.15
+          go-version: 1.16
 
       - name: Test 🚨
         run: make test
