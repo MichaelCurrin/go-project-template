@@ -13,19 +13,21 @@
 
 ## Sample usage
 
-### Default behavior
+### Run with default behavior
+
+_TODO: Replace with your own app name._
 
 ```sh
-$ myapp
+$ go-project-template
 ```
 ```
 Hello, World!
 ```
 
-### With options
+### Run with options
 
 ```sh
-$ myapp --name Gopher
+$ go-project-template --name Gopher
 ```
 ```
 Hello, Gopher!
