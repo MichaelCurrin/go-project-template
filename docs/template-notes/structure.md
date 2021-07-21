@@ -10,13 +10,13 @@ I don't know if you can have multiple modules as files at the top-level because 
 
 ### Main
 
-- [main.go](/main.go)
+- [main.go](https://github.com/MichaelCurrin/go-project-template/blob/main/main.go)
 
 Entry-point script and argument parsing.
 
 ### Greetings
 
-- [internal/greetings.go](/internal/greetings.go)
+- [internal/greetings.go](https://github.com/MichaelCurrin/go-project-template/blob/main/internal/greetings.go)
 
 This is imported in `main.go`.
 
@@ -93,12 +93,18 @@ replace github.com/MichaelCurrin/go-project-template/internal => ./internal
 
 See the official [Project Layout](https://github.com/golang-standards/project-layout#go-directories) repo's docs for more info.
 
-| Path                  | Description                                                                                                                                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [cmd](/cmd/)          | Entry-point for the CLI. Keep this light on code. Inside `cmd`, include a directory named as the intended name of your executable and add `main.go` file there. This approach is not used for this project, to keep things easier to learn and read as a Go beginner. |
-| [internal](/internal) | Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself.                                                                       |
-| [pkg](/pkg/)          | Library code that's ok to use by external applications                                                                                                                                                                                                                |
-Sample `cmd` script in a repo, as recommended by the layouts project.
+| Path         | Description                                                                                                                                                                                                                                                           |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [cmd][]      | Entry-point for the CLI. Keep this light on code. Inside `cmd`, include a directory named as the intended name of your executable and add `main.go` file there. This approach is not used for this project, to keep things easier to learn and read as a Go beginner. |
+| [internal][] | Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself.                                                                       |
+| [pkg][]      | Library code that's ok to use by external applications                                                                                                                                                                                                                |
+
+[internal]: https://github.com/MichaelCurrin/go-project-template/tree/main/internal/
+[cmd]: https://github.com/MichaelCurrin/go-project-template/tree/main/cmd/
+[pkg]: https://github.com/MichaelCurrin/go-project-template/tree/main/pkg/
+
+
+A sample `cmd` script in other repo, as recommended by the layouts project.
 
 - [cmd/docker-slim-sensor/main.go](https://github.com/docker-slim/docker-slim/blob/master/cmd/docker-slim-sensor/main.go)
     ```go
@@ -113,11 +119,11 @@ Sample `cmd` script in a repo, as recommended by the layouts project.
     }
     ```
 
-See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go)
+See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go) in that repo.
 
 That is set up as `package app`. It has a `Run` function. So that is how `app.Run()` is called.
 
-Not to be confused with setting up a CLI app as:
+Not to be confused with setting up a CLI app like this:
 
 ```go
 app := &cli.App{}
