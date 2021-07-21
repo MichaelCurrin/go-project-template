@@ -7,7 +7,7 @@
 | Name     | Description                                                                                                                                    |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Go][]   | "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."                              |
-| [Make][] | Standard on Linux and macOS. A task runner that is used throughout this project. Run commands in [Makefile](/Makefile) directly if you prefer. |
+| [Make][] | Standard on Linux and macOS. A task runner that is used throughout this project. Runs commands in the `Makefile`                               |
 
 [Go]: https://golang.org
 [Make]: https://www.gnu.org/software/make/
