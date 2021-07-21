@@ -1,5 +1,5 @@
 # Go Project Template ⏭ 📦
-> Starter template for a new Go project - includes docs, Makefile and GH Actions CI
+> Starter template for a Go project - including docs and CI
 
 <!-- Badges generated with Badge Generator - https://michaelcurrin.github.io/badge-generator/ -->
 
