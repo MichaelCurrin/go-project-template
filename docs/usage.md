@@ -19,3 +19,15 @@ Or install it globally as per [Quickstart](quickstart.md) or [Installation](inst
 $ go-project-template
 Hello, World!
 ```
+
+
+## Test the usage
+
+```console
+$ make usage
+go run main.go -h
+NAME:
+   My App - Display a friendly greeting
+   
+...
+```
