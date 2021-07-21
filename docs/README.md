@@ -1,4 +1,4 @@
-# Go Project Template documentation
+# Go Project Template documentation ⏭ 📦
 
 
 ## Features
@@ -10,7 +10,7 @@
 
 ## Menu
 
-- [Quickstart](quickstart.md) - guide to set up and run the app without Go experience.
+- [Quickstart](quickstart.md) - set up and run the app globally, without Go experience.
 - Development
     - [Installation](installation.md)
     - [Usage](usage.md) 
