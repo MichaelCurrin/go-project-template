@@ -1,8 +1,8 @@
 OUT_DIR = build
-OUT_BIN = myapp
-COMPILED := $(OUT_DIR)/$(OUT_BIN)
+OUT_BIN_NAME = myapp
+OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
-.PHONY: $(OUT_DIR)
+.PHONY: $(OUT_BIN_PATH)
 
 
 default: install
@@ -39,9 +39,10 @@ run:
 usage:
 	go run main.go -h
 
-
 build:
-	go build -v -o $(COMPILED) main.go
+	go build -v \
+		-o $(OUT_BIN_PATH) \
+		main.go
 
 global:
 	go install
