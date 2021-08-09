@@ -42,24 +42,9 @@ Note that the binary is specific to an OS architecture.
 
 ## Install globally
 
-Compile the app and install to your `GOBIN`. This will not add to the project `build` directory.
+It can be useful to install the app globally and then use it a bit before releasing it.
 
-```sh
-$ make global
-```
-
-Test it:
-
-```sh
-$ cd ~
-$ go-project-template -h
-```
-
-Make sure your `PATH` is setup in `~/.bashrc` or similar to include the `GOBIN` directory, so your command can be run from anywhere:
-
-```sh
-export PATH="$PATH:$GOPATH/bin"
-```
+See the [Install globally](install-globally.md) doc.
 
 
 ## CI flow
