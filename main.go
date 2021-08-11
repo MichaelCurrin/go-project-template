@@ -14,6 +14,11 @@ import (
 const (
 	// VERSION is the release number.
 	VERSION = "v0.4.0"
+
+	// AUTHOR_NAME is the code author's name or username.
+	AUTHOR_NAME = "MichaelCurrin"
+	// AUTHOR_EMAIL is the code author's email address.
+	AUTHOR_EMAIL = ""
 )
 
 func main() {
@@ -51,8 +56,8 @@ func main() {
 		Compiled: time.Time{},
 		Authors: []*cli.Author{
 			{
-				Name:  "MichaelCurrin",
-				Email: "",
+				Name:  AUTHOR_NAME,
+				Email: AUTHOR_EMAIL,
 			},
 		},
 	}
