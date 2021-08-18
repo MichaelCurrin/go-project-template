@@ -11,6 +11,6 @@
 ## My own template projects
 
 - [![MichaelCurrin - deno-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=deno-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/deno-project-template)
-    - Deno runs JS and TS, but it's CLI and flow is similar to Go, so it's good to compare with.
+    - Deno is a Node alternative that runs JS and TS, but it's CLI and flow are similar to Go, so it's good to compare against.
 - [![MichaelCurrin - node-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=node-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/node-project-template)
 - [![MichaelCurrin - py-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=py-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/py-project-template)
