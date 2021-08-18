@@ -7,12 +7,16 @@ OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
 default: install
 
-all: install fmt-check test build
+all: hooks install fmt-check test build
 
 
 h help:
 	@grep '^[a-z]' Makefile
 
+
+.PHONY: hooks
+hooks:
+	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
 install:
 	go get ./...
