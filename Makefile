@@ -25,7 +25,10 @@ tidy:
 
 
 fmt-check:
-	gofmt -l .
+	@if [ -n "$(gofmt -l .)" ]; then \
+		echo "Format fixes are needed";\
+		exit 1; \
+	fi
 
 fmt-fix:
 	go fmt ./...
