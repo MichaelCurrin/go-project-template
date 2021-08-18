@@ -2,7 +2,7 @@ OUT_DIR = build
 OUT_BIN_NAME = myapp
 OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
-.PHONY: $(OUT_BIN_PATH)
+.PHONY: $(OUT_DIR)
 
 
 default: install
