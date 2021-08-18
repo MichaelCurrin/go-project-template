@@ -10,6 +10,9 @@
 
 ## My own template projects
 
+I aim to have a Makefile in most of these and to keep the commands consistent.
+
+- [![MichaelCurrin - rust-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=rust-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/rust-project-template)
 - [![MichaelCurrin - deno-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=deno-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/deno-project-template)
     - Deno is a Node alternative that runs JS and TS, but it's CLI and flow are similar to Go, so it's good to compare against.
 - [![MichaelCurrin - node-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=node-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/node-project-template)
