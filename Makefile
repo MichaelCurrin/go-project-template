@@ -7,7 +7,7 @@ OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
 default: install
 
-all: install fmt test build
+all: install fmt-check test build
 
 
 h help:
@@ -24,8 +24,12 @@ tidy:
 	go mod tidy
 
 
-fmt:
+fmt-check:
+	gofmt -l .
+
+fmt-fix:
 	go fmt ./...
+
 
 test:
 	@echo "TODO: Add tests"
@@ -38,6 +42,7 @@ run:
 
 usage:
 	go run main.go -h
+
 
 build:
 	go build -v \
