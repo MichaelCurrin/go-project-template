@@ -125,14 +125,14 @@ A sample `cmd` script in another repo, as recommended by the layouts project.
     package main
 
     import (
-        "github.com/docker-slim/docker-slim/internal/app/sensor"
+        "github.com/docker-slim/docker-slim/pkg/app/sensor"
     )
 
     func main() {
         app.Run()
     }
     ```
-- [pkg/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/sensor/app.go)
+- [pkg/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/sensor/app.go) (actually moved from `internal` before to `pkg`).
     - That is set up as `package app`. 
     - It has a `Run` function. So that is how `app.Run()` is called.
     - Not to be confused with setting up a CLI app like this with the `cli` package:
