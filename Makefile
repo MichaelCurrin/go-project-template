@@ -7,7 +7,7 @@ OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
 default: install
 
-all: hooks install fmt-check test build
+all: hooks install fmt-check lint test build
 
 
 h help:
@@ -37,6 +37,9 @@ fmt-check:
 fmt-fix:
 	go fmt ./...
 
+lint:
+	go vet ./...
+	staticcheck ./...
 
 test:
 	@echo "TODO: Add tests"
