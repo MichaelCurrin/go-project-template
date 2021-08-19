@@ -11,6 +11,12 @@ $ make fmt-check
 $ make fmt-fix
 ```
 
+## Lint
+
+```sh
+$ make lint
+```
+
 
 ## Unit tests
 
