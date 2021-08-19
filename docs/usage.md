@@ -17,6 +17,8 @@ $ make fmt-fix
 $ make lint
 ```
 
+Note that `staticcheck` is installed as a global dependency to avoid it appearing unused in `go.mod` and therefore getting auto-removed on tidy.
+
 
 ## Unit tests
 
