@@ -132,7 +132,7 @@ A sample `cmd` script in another repo, as recommended by the layouts project.
         app.Run()
     }
     ```
-- [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go)
+- [pkg/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/sensor/app.go)
     - That is set up as `package app`. 
     - It has a `Run` function. So that is how `app.Run()` is called.
     - Not to be confused with setting up a CLI app like this with the `cli` package:
@@ -140,3 +140,9 @@ A sample `cmd` script in another repo, as recommended by the layouts project.
         app := &cli.App{}
         app.Run(os.Args)
         ```
+
+That project has `pkg/app` and `pkg/master` as divisions but I don't know why.
+
+Here is a CLI there.
+
+- [pkg/app/master/cli.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/master/cli.go)
