@@ -93,19 +93,32 @@ replace github.com/MichaelCurrin/go-project-template/internal => ./internal
 
 ## Full structure
 
+For small projects, you can choose to have a flat structure with everything in the root of the repo.
+
 See the official [Project Layout](https://github.com/golang-standards/project-layout#go-directories) repo's docs for more info.
 
 | Path         | Description                                                                                                                                                                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [cmd][]      | Entry-point for the CLI. Keep this light on code. Inside `cmd`, include a directory named as the intended name of your executable and add `main.go` file there. This approach is not used for this project, to keep things easier to learn and read as a Go beginner. |
-| [internal][] | Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself.                                                                       |
-| [pkg][]      | Library code that's ok to use by external applications                                                                                                                                                                                                                |
+| [cmd][]      | Public - entry-point for the CLI. Keep this light on code. Inside `cmd`, include a directory named as the intended name of your executable and add `main.go` file there. |
+| [internal][] | Private - application and library code, disallowed for use in other projects. Note that this layout pattern is enforced by the Go compiler itself.                                                                       |
+| [pkg][]      | Public - library code that's fine to use by external applications.                                                                                                                                                                                                                |
+
+Not used in this project, but recommended if needed:
+
+Path | Description 
+--- | ---
+[web][] | For if your project is a web app.
+[scripts][] | Shell scripts. Or `bin` based on outside Go.
+
 
 [internal]: https://github.com/MichaelCurrin/go-project-template/tree/main/internal/
 [cmd]: https://github.com/MichaelCurrin/go-project-template/tree/main/cmd/
 [pkg]: https://github.com/MichaelCurrin/go-project-template/tree/main/pkg/
 
-A sample `cmd` script in other repo, as recommended by the layouts project.
+[web]: https://github.com/golang-standards/project-layout/tree/master/web
+[scripts]: https://github.com/golang-standards/project-layout/tree/master/scripts
+
+A sample `cmd` script in another repo, as recommended by the layouts project.
 
 - [cmd/docker-slim-sensor/main.go](https://github.com/docker-slim/docker-slim/blob/master/cmd/docker-slim-sensor/main.go)
     ```go
@@ -119,14 +132,11 @@ A sample `cmd` script in other repo, as recommended by the layouts project.
         app.Run()
     }
     ```
-
-See [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go) in that repo.
-
-That is set up as `package app`. It has a `Run` function. So that is how `app.Run()` is called.
-
-Not to be confused with setting up a CLI app like this:
-
-```go
-app := &cli.App{}
-app.Run(os.Args)
-```
+- [internal/app/sensor/app.go](https://github.com/docker-slim/docker-slim/blob/master/internal/app/sensor/app.go)
+    - That is set up as `package app`. 
+    - It has a `Run` function. So that is how `app.Run()` is called.
+    - Not to be confused with setting up a CLI app like this with the `cli` package:
+        ```go
+        app := &cli.App{}
+        app.Run(os.Args)
+        ```
