@@ -146,3 +146,4 @@ That project has `pkg/app` and `pkg/master` as divisions but I don't know why.
 Here is a CLI there.
 
 - [pkg/app/master/cli.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/master/cli.go)
+- [pkg/app/master/commands/run/cli.go](https://github.com/docker-slim/docker-slim/blob/master/pkg/app/master/commands/run/cli.go) and other cli.go files in `commands/*/`.
