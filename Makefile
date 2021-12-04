@@ -2,7 +2,7 @@ OUT_DIR = build
 OUT_BIN_NAME = myapp
 OUT_BIN_PATH := $(OUT_DIR)/$(OUT_BIN_NAME)
 
-.PHONY: $(OUT_DIR)
+.PHONY: $(OUT_DIR) hooks
 
 
 default: install
@@ -14,13 +14,16 @@ h help:
 	@grep '^[a-z]' Makefile
 
 
-.PHONY: hooks
 hooks:
 	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
-install:
+install-packages:
 	go get ./...
+	
+install-staticcheck:
 	go install honnef.co/go/tools/cmd/staticcheck@latest
+	
+install: install-packages install-staticcheck
 
 upgrade:
 	go get -u ./...
@@ -31,7 +34,8 @@ tidy:
 
 fmt-check:
 	@if [ -n "$(gofmt -l .)" ]; then \
-		echo "Format fixes are needed";\
+		echo 'Error - formatting fixes needed. Run this:' ; \
+		echo '  make fmt-fix' ; \
 		exit 1; \
 	fi
 
@@ -43,16 +47,15 @@ lint:
 	staticcheck ./...
 
 test:
-	@echo "TODO: Add tests"
 	go test -v ./...
 
 
+usage:
+	go run main.go -h
+	
 run:
 	go run main.go
 	go run main.go --name Gopher
-
-usage:
-	go run main.go -h
 
 
 build:
