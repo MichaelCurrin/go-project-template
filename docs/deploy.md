@@ -40,6 +40,8 @@ Nothing is persisted. For info on using CI to build and release your assets, see
 
 ## Release steps
 
+### Manual
+
 1. **Push** any unpushed changes.
 1. Check that the GH Actions **workflow** was successful. See [CI flow](#ci-flow) below.
 1. Locally:
@@ -54,4 +56,9 @@ Nothing is persisted. For info on using CI to build and release your assets, see
 1. Create a **Release** on GitHub.
 1.  **Upload** the binary file on asset.
 
-The [Go Releaser](https://goreleaser.com/ci/actions/) action can help with automating this flow.
+### Automated
+
+The [Go Releaser](https://goreleaser.com/ci/actions/) action can help with automating this flow to run on GH Actions whenever a tag is pushed.
+
+See my [Go Releaser recipe](https://michaelcurrin.github.io/code-cookbook/recipes/ci-cd/github-actions/workflows/go/go-releaser.html).
+
