@@ -7,10 +7,11 @@
 | Name     | Description                                                                                                       |
 | -------- | ----------------------------------------------------------------------------------------------------------------- |
 | [Go][]   | "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software." |
-| [Make][] | Standard on Linux and macOS. A task runner that is used throughout this project. Runs commands in the `Makefile`  |
+| [Make][] | Standard on Linux and macOS. A task runner that is used throughout this project. Running `make` will run commands in the [Makefile][]. |
 
 [Go]: https://golang.org
 [Make]: https://www.gnu.org/software/make/
+[Makefile]: https://github.com/MichaelCurrin/go-project-template/blob/main/Makefile
 
 
 ## Clone
@@ -28,7 +29,7 @@ Install Go on your system - see [Install Go](https://michaelcurrin.github.io/dev
 
 ## Install project packages
 
-This step is actually _optional_ as packages will be installed on an initial run.
+This step is actually _optional_, as packages will be installed on an initial run.
 
 ```sh
 $ make install
@@ -39,7 +40,7 @@ $ make install
 
 ### Upgrade
 
-Upgrade all packages to the latest:
+Upgrade all packages to the latest versions:
 
 ```sh
 $ make upgrade
@@ -47,8 +48,10 @@ $ make upgrade
 
 ### Tidy
 
-Install missing modules and removed unused modules from the lockfile.
+Install missing modules and removed unused modules from the lockfile:
 
 ```sh
 $ make tidy
 ```
+
+Commit the lockfile changes if any.
