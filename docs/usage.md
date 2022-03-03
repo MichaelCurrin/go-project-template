@@ -11,6 +11,7 @@ $ make fmt-check
 $ make fmt-fix
 ```
 
+
 ## Lint
 
 ```sh
@@ -27,7 +28,9 @@ $ make test
 ```
 
 
-## View the app usage
+## Help
+
+View the app's usage guide
 
 ```console
 $ make usage
@@ -39,7 +42,7 @@ NAME:
 ```
 
 
-## Run
+## Run app
 
 ### With Go
 
@@ -55,7 +58,7 @@ Hello, Gopher!
 
 ### With make
 
-Run the app through `make` (on Linux and macOS), using some fixed sample inputs. This is useful for development to check functionality on a few test cases.
+Run the app through `make`, using some fixed sample inputs. This is useful for development to check functionality on a few test cases.
 
 ```console
 $ make run
