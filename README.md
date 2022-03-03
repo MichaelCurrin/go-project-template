@@ -17,19 +17,15 @@
 
 _TODO: Replace with your own app name._
 
-```sh
+```console
 $ go-project-template
-```
-```
 Hello, World!
 ```
 
 ### Run with options
 
-```sh
+```console
 $ go-project-template --name Gopher
-```
-```
 Hello, Gopher!
 ```
 
@@ -46,7 +42,7 @@ For help using this project, see [Template notes](/docs/template-notes/) in the 
 
 
 ## Documentation
-> How to install and run this project locally and release it
+> How to install and run this project locally, and release it
 
 <div align="center">
 
