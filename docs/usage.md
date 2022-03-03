@@ -41,7 +41,21 @@ NAME:
 
 ## Run
 
-Run the app through `make`, using fixed sample inputs. This is useful for development.
+### With Go
+
+```console
+$ go run main.go
+Hello, World!
+```
+
+```console
+$ go run main.go --name Gopher
+Hello, Gopher!
+```
+
+### With make
+
+Run the app through `make` (on Linux and macOS), using some fixed sample inputs. This is useful for development to check functionality on a few test cases.
 
 ```console
 $ make run
@@ -51,11 +65,15 @@ go run main.go --name Gopher
 Hello, Gopher!
 ```
 
-Or install it globally, as per [Quickstart](quickstart.md) or [Installation](installation.md) and then run it anywhere by name.
+### With binary
+
+Install the app globally, as per [Quickstart](quickstart.md) or [Installation](installation.md).
+
+Then run it anywhere by name:
 
 ```console
 $ go-project-template
 Hello, World!
 ```
 
-See [Deploy](deploy.md) for building the app.
+See [Deploy](deploy.md) for building the app for a release.
