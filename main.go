@@ -13,7 +13,7 @@ import (
 
 const (
 	// VERSION is the release number.
-	VERSION = "v0.4.0"
+	VERSION = "v0.5.0"
 
 	// AUTHOR_NAME is the code author's name or username.
 	AUTHOR_NAME = "MichaelCurrin"
