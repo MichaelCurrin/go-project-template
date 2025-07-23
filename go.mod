@@ -1,6 +1,6 @@
 module github.com/MichaelCurrin/go-project-template
 
-go 1.16
+go 1.23.0
 
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.1 // indirect
